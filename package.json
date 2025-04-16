@@ -1,0 +1,5 @@
+{
+    "private": true,
+    "workspaces": ["frontend-react", "frontend-mobile", "shared"]
+  }
+  
