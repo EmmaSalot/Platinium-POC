@@ -19,6 +19,11 @@ export default function LoginPage() {
       const result = await login(username, password);
       setMessageType("success");
       setMessage("Connexion réussie");
+     
+      setTimeout(() => {
+        window.location.href = "/dashboard";
+      }, 1000); 
+      
     } catch (error) {
       setMessageType("error");
       setMessage("Identifiants incorrects. Veuillez réessayer.");
