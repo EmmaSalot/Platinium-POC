@@ -19,7 +19,7 @@ export default function DABLoginPage() {
       const result = await loginDab(cardNumber, pinCode);
       setMessageType("success");
       setMessage("Connexion réussie");
-
+      window.localStorage.setItem("token", result.token);
       setTimeout(() => {
         window.location.href = "/dashboard";
       }, 1000);

@@ -7,7 +7,7 @@ import { logout } from "platinium_services";
 export default function DashboardPage() {
   const deconnexion = (e) => {
     e.preventDefault();
-    const terminal = logout(window.localStorage.getItem(token));
+    const terminal = logout(window.localStorage.getItem("token"));
     if (terminal == "dab") {
       window.location.href = "/dab-login";
     } else {
