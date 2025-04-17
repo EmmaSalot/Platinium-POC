@@ -142,10 +142,10 @@ export default function DashboardPage() {
             <p>
               Bonjour, <strong>Jean Dupont</strong>
             </p>
-            <button onClick={deconnexion}>Déconnexion</button>
-            <a href="/login" className={styles.logoutLink}>
+            <button onClick={deconnexion} className={styles.logoutButton}>Déconnexion</button>
+            {/* <a href="/login" className={styles.logoutLink}>
               Déconnexion
-            </a>
+            </a> */}
           </div>
         </div>
       </header>

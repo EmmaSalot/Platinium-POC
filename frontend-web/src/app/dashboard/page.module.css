@@ -44,6 +44,21 @@
   font-size: 14px;
 }
 
+.logoutButton {
+  background: none;
+  border: none;
+  color: #002D62;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.logoutButton:hover {
+  text-decoration: underline;
+}
+
 .logoutLink {
   color: #002D62;
   font-size: 12px;
