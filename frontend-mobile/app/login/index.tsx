@@ -9,7 +9,8 @@ import {
   TouchableOpacity, 
   StyleSheet, 
   ActivityIndicator,
-  SafeAreaView
+  SafeAreaView,
+  Image
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { login } from "platinium_services";
@@ -38,7 +39,6 @@ export default function LoginScreen() {
     try {
       const data = await login(username, password);
       console.log("Token:", data.token);
-      // Navigate to dashboard
       router.push("/dashboard");
     } catch (error) {
       setErrorMessage("Identifiants incorrects. Veuillez réessayer.");
@@ -51,12 +51,10 @@ export default function LoginScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
       <StatusBar style={colorScheme === "dark" ? "light" : "dark"} />
       <View style={styles.loginCard}>
-        {/* Bank Logo */}
         <View style={[styles.logoContainer, { backgroundColor: colors.primary }]}>
           <Text style={styles.logoText}>PLATINIUM BANQUE</Text>
         </View>
 
-        {/* Bank Building Icon - replaced with standard View */}
         <View style={styles.bankIcon}>
           <View style={styles.bankRoof}></View>
           <View style={styles.bankBuilding}></View>
