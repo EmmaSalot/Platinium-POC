@@ -1,5 +1,9 @@
 {
-    "private": true,
-    "workspaces": ["frontend-react", "frontend-mobile", "shared"]
-  }
-  
+  "private": true,
+  "workspaces": [
+    "frontend-web",
+    "frontend-mobile",
+    "frontend-react",
+    "shared"
+  ]
+}
