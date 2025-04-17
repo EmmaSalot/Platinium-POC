@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { loginDad } from "platinium_services";
+import { loginDab } from "platinium_services";
 import styles from "./page.module.css";
 
 export default function DABLoginPage() {
@@ -16,7 +16,7 @@ export default function DABLoginPage() {
     setIsLoading(true);
 
     try {
-      const result = await loginDad(cardNumber, pinCode);
+      const result = await loginDab(cardNumber, pinCode);
       setMessageType("success");
       setMessage("Connexion réussie");
 
