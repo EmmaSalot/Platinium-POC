@@ -1,26 +1,42 @@
 /**
  * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// Platinium Bank colors
+const primaryColor = '#002D62'; // Dark blue
+const secondaryColor = '#f5f7fa'; // Light gray
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
+    text: '#333333',
+    background: '#f5f7fa',
+    tint: primaryColor,
     icon: '#687076',
     tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    tabIconSelected: primaryColor,
+    primary: primaryColor,
+    secondary: secondaryColor,
+    card: '#FFFFFF',
+    border: '#E1E1E1',
+    success: '#2ecc71',
+    error: '#e74c3c',
+    credit: '#2ecc71',
+    debit: '#e74c3c',
   },
   dark: {
     text: '#ECEDEE',
     background: '#151718',
-    tint: tintColorDark,
+    tint: '#f5f7fa',
     icon: '#9BA1A6',
     tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    tabIconSelected: '#FFFFFF',
+    primary: primaryColor,
+    secondary: '#1E1E1E',
+    card: '#1A1A1A',
+    border: '#333333',
+    success: '#2ecc71',
+    error: '#e74c3c',
+    credit: '#2ecc71',
+    debit: '#e74c3c',
   },
 };
