@@ -3,7 +3,7 @@ declare module "platinium_services" {
     username: string,
     password: string
   ): Promise<{ token: string }>;
-  export function loginDad(
+  export function loginDab(
     numbers: string,
     pin: string
   ): Promise<{ token: string }>;

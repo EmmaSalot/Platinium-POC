@@ -20,7 +20,7 @@ export async function login(username, password) {
   }
 }
 
-export async function loginDad(numbers, pin) {
+export async function loginDab(numbers, pin) {
   try {
     const response = await fetch("http://localhost:8080/api/dab/login", {
       method: "POST",
