@@ -5,10 +5,10 @@ import Image from "next/image";
 import { logout } from "platinium_services";
 
 export default function DashboardPage() {
-  const deconnexion = (e) => {
+  const deconnexion = async (e) => {
     e.preventDefault();
-    const terminal = logout(window.localStorage.getItem("token"));
-    if (terminal == "dab") {
+    const terminal = await logout(window.localStorage.getItem("token"));
+    if (terminal.terminal == "dab") {
       window.location.href = "/dab-login";
     } else {
       window.location.href = "/login";
